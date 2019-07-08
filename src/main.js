@@ -4,6 +4,9 @@
 // ES6中的模块化的语法,导入模块
 import Vue from 'vue'
 import App from './App.vue'
+// 导入css样式
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import './assets/css/index.css'
 // 提示当前处在开发模式,false不提示
 Vue.config.productionTip = false
 
