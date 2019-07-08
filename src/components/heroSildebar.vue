@@ -7,7 +7,7 @@
           <span class="sr-only">(current)</span> 为残疾人设置读取
         </a>
       </li> -->
-      <li class="active">
+      <!-- <li class="active">
         <a href="#">英雄列表</a>
       </li>
       <li>
@@ -15,7 +15,10 @@
       </li>
       <li>
         <a href="#">装备列表</a>
-      </li>
+      </li> -->
+      <router-link to="/hero" class="active" tag="li"><a>英雄列表</a></router-link>
+      <router-link to="/weapon" tag="li"><a>武器列表</a></router-link>
+      <router-link to="/equip"  tag="li"><a>装备列表</a></router-link>
     </ul>
   </div>
 </template>

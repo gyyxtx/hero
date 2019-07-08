@@ -5,14 +5,22 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+
 // 导入vue-router
 import VueRouter from 'vue-router'
 // 注册VueRouter插件
 Vue.use(VueRouter)
+
+
+// 导入HeroList组件
+import HeroList from './view/hero/HeroList.vue'
 // 创建路由对象
 const router = new VueRouter({
   // 配置路由规则
-  route:[]
+  routes:[
+    // 配置路由信息
+    {name:'hero',path:'/hero',component:HeroList}
+  ]
 })
 
 // 导入css样式
