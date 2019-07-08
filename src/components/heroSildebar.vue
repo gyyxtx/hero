@@ -16,7 +16,7 @@
       <li>
         <a href="#">装备列表</a>
       </li> -->
-      <router-link to="/hero" class="active" tag="li"><a>英雄列表</a></router-link>
+      <router-link to="/hero" tag="li"><a>英雄列表</a></router-link>
       <router-link to="/weapon" tag="li"><a>武器列表</a></router-link>
       <router-link to="/equip"  tag="li"><a>装备列表</a></router-link>
     </ul>
