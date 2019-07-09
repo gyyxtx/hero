@@ -14,6 +14,7 @@ import WeaponList from './view/weapon/WeaponList.vue'
 import EquipList from './view/equip/EquipList.vue'
 // 导入heroadd组件
 import HeroAdd from './view/hero/HeroAdd.vue'
+import HeroEdit from './view/hero/HeroEdit.vue'
 // 创建路由对象
 const router = new VueRouter({
     // 当浏览器中地址栏的地址和routerlinka标签精确匹配,会添加 
@@ -30,7 +31,8 @@ const router = new VueRouter({
     {name:'hero',path:'/hero',component:HeroList},
     {name:"weapon",path:'/weapon',component:WeaponList},
     {name:'equip',path:'/equip',component:EquipList},
-    {name:'heroadd',path:'/hero/add',component:HeroAdd}
+    {name:'heroadd',path:'/hero/add',component:HeroAdd},
+    {name:'heroedit',path:'/hero/edit/:id',component:HeroEdit,props:true}
   ]
 })
 

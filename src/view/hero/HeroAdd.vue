@@ -42,7 +42,7 @@ export default {
     axios
     .post('http://localhost:3000/heroes',this.formData)
     .then((res)=>{
-      console.log(this.formData)
+      // console.log(this.formData)
       if(res.status==201){
         // 添加成功后,跳转页面(编程式导航)
         this.$router.push('/hero');
