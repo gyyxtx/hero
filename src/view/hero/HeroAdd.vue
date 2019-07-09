@@ -40,7 +40,7 @@ export default {
   methods:{
     add(){
     this.axios
-    .post('http://localhost:3000/heroes',this.formData)
+    .post('heroes',this.formData)
     .then((res)=>{
       // console.log(this.formData)
       if(res.status==201){

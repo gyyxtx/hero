@@ -10,6 +10,11 @@ import router from './router.js'
 import axios from 'axios'
 Vue.prototype.axios=axios
 
+// 配置axios请求的基地址,调用请求方法的时候get
+// 配置axios的基地址，调用请求方法的时候get(url)，会自动把请求方法的路径拼接到基地址后面
+
+axios.defaults.baseURL='http://localhost:3000/'
+
 
 // 导入css样式
 import '../node_modules/bootstrap/dist/css/bootstrap.css'

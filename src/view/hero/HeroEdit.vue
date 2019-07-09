@@ -39,7 +39,7 @@ export default {
   methods: {
     // 发送请求获取数据
     getData() {
-      this.axios.get(`http://localhost:3000/heroes/${this.id}`).then(res => {
+      this.axios.get(`heroes/${this.id}`).then(res => {
         const { status, data } = res;
         if (status == 200) {
           this.list = data;
@@ -49,7 +49,7 @@ export default {
     // 更新数据,点击按钮,提交数据,跳转页面
     updataData() {
       this.axios
-        .put(`http://localhost:3000/heroes/${this.id}`, this.list)
+        .put(`heroes/${this.id}`, this.list)
         .then(res => {
           if (res.status == 200) {
             this.$router.push("/hero");

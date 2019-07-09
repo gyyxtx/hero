@@ -47,7 +47,7 @@ export default {
     //获取英雄列表数据并将其渲染到页面上
     showList:function(){
       this.axios
-        .get('http://localhost:3000/heroes')
+        .get('heroes')
         .then(res=>{
           // console.log(res)
           // 解构赋值
@@ -73,7 +73,7 @@ export default {
       }
       // 如果确定,发送请求,删除对应行
       this.axios
-      .delete(`http://localhost:3000/heroes/${id}`)
+      .delete(`heroes/${id}`)
       .then(res=>{
         // console.log(res)
         // 如果删除成功,更新列表
