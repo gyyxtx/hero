@@ -12,6 +12,8 @@ Vue.use(VueRouter)
 import HeroList from './view/hero/HeroList.vue'
 import WeaponList from './view/weapon/WeaponList.vue' 
 import EquipList from './view/equip/EquipList.vue'
+// 导入heroadd组件
+import HeroAdd from './view/hero/HeroAdd.vue'
 // 创建路由对象
 const router = new VueRouter({
     // 当浏览器中地址栏的地址和routerlinka标签精确匹配,会添加 
@@ -25,7 +27,8 @@ const router = new VueRouter({
     {path:'',redirect:'/hero'},
     {name:'hero',path:'/hero',component:HeroList},
     {name:"weapon",path:'/weapon',component:WeaponList},
-    {name:'equip',path:'/equip',component:EquipList}
+    {name:'equip',path:'/equip',component:EquipList},
+    {name:'heroadd',path:'/hero/add',component:HeroAdd}
   ]
 })
 

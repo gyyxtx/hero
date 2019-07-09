@@ -1,7 +1,8 @@
 <template>
   <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
     <h2 class="sub-header">英雄列表</h2>
-    <a class="btn btn-success" href="add.html">添加</a>
+    <!-- <a class="btn btn-success" href="add.html">添加</a> -->
+    <router-link class="btn btn-success" :to="{name:'heroadd'}">添加</router-link>
     <div class="table-responsive">
       <table class="table table-striped">
         <thead>
