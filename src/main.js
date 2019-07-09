@@ -6,6 +6,9 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import router from './router.js'
+// 让所有的vue实例都有一个axios属性,给Vue函数的原型增加成员
+import axios from 'axios'
+Vue.prototype.axios=axios
 
 
 // 导入css样式

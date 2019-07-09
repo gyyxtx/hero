@@ -25,7 +25,7 @@
 /* 1.绑定文本框和下拉框
  2.点击按钮,发送请求,添加
  3.跳转回hero列表 */
-import axios from 'axios'
+// import axios from 'axios'
 export default {
   data() {
     return {
@@ -39,7 +39,7 @@ export default {
   //发送请求,添加数据
   methods:{
     add(){
-    axios
+    this.axios
     .post('http://localhost:3000/heroes',this.formData)
     .then((res)=>{
       // console.log(this.formData)

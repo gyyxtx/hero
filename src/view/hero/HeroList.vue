@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 
 export default {
   data() {
@@ -46,7 +46,7 @@ export default {
   methods:{
     //获取英雄列表数据并将其渲染到页面上
     showList:function(){
-      axios
+      this.axios
         .get('http://localhost:3000/heroes')
         .then(res=>{
           // console.log(res)
@@ -72,7 +72,7 @@ export default {
         return false;
       }
       // 如果确定,发送请求,删除对应行
-      axios
+      this.axios
       .delete(`http://localhost:3000/heroes/${id}`)
       .then(res=>{
         // console.log(res)
