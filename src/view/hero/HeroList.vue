@@ -87,7 +87,6 @@ export default {
         alert('服务器异常')
       })
     },
-    // 添加功能
   }
 };
 </script>
